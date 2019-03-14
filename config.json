@@ -1,0 +1,49 @@
+{
+	"app" :
+	{
+		"js" :
+		{
+			"sources" : [
+				"app/static/js/*.js"
+			],
+			"jsHintReporter" : "jshint-stylish",
+			"tmpDirectory" : ".temporal/js",
+			"entry": "client/js/entry.js"
+		},
+		"css" :
+		{
+			"sources" : [
+    			"client/css/*.styl",
+					"!client/css/_*.styl"
+  			],
+			"tmpDirectory" : ".temporal/css",
+			"entry" : "client/css/main.styl"
+		},
+		"server" : [".temporal", "client"]
+	},
+	"deploy" :
+	{
+		"from" :
+		[
+			".temporal/css/main.css",
+			".temporal/js/bundle.js",
+			"client/**/*.html"
+		],
+		"to" : "deploy",
+		"server" : ["deploy"]
+	},
+	"files"	 :
+	{
+		"cleanPaths" :
+		[
+			"deploy/*"
+		],
+		"watch":
+		{
+			"html" : ["client/**/*.html"],
+			"styles" : ["client/css/**/*.{styl,css}"],
+			"js" : ["client/js/**/*.js"],
+			"img" : ["client/images/**/*"]
+		}
+	}
+}
