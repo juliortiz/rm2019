@@ -1,0 +1,148 @@
+.pag-contacto
+	display flex
+	flex-direction column
+	justify-content space-around
+	.form
+		margin-bottom 1.5em
+		.contact-form
+			font-family Arial,Helvetica,sans-serif
+			font-size .8em
+			line-height 1.5em
+			display flex
+			flex-wrap wrap
+			.form-set
+				width 100%
+				padding 0
+				margin-bottom 1em
+				border 0
+				.fill
+					margin .5em 0
+					display flex
+					align-items center
+					justify-content space-between
+					.form-label
+						width 8.8em
+					.form-input
+						width 100%
+						line-height 1.5em
+						border 1px solid #BEBEBE
+						padding-left .2em
+					.form-select
+						width 100%
+						height 2em
+					.psistema
+						margin-left .5em
+					.row
+						display flex
+						align-items center
+					.c_error
+						color _red-msj
+						padding: .3em
+						font-weight bold
+				.form-txtarea
+					width 100%
+					height 10em
+					overflow auto
+					border 1px solid #BEBEBE
+			#msjboton
+				display flex
+				width 100%
+				.btn-b
+					margin-left auto
+					background-color _orange
+					border-radius 5px
+					border 0
+					text-align center
+					color white
+					font-weight bold
+					text-transform uppercase
+					padding .6em
+					line-height 1em
+					font-size 1.2em
+					box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+					&:hover
+						color _orange
+						background-color _gray
+						font-style italic
+			#c_information
+				margin-top 1em
+				p
+					text-align: center;
+					font-weight bold
+					font-size 1.2em
+					color: #1B9DED;
+					border-radius 5px
+					width 100%
+					
+		.mail
+			text-align center
+			margin-top 1.2em
+			&__icon
+				color _orange
+				font-size 1.5em
+			&__texto
+				font-size 1.2em
+	.maps
+		.locales
+			margin-bottom 1em
+			.local
+				margin-bottom .5em
+				.addres__title
+					text-transform uppercase
+					color _gray
+					font-size 1.2em
+			#mapa
+				width 100%
+				height 250px
+				border 1px solid #BEBEBE
+			#mapa2
+				width 100%
+				height 250px
+				border 1px solid #BEBEBE
+
+@media screen and (min-width 25em)
+	.pag-contacto
+		.form
+			.contact-form
+				justify-content space-around
+				.form-set--50
+					width 43%
+					.fill
+						flex-direction column
+						align-items flex-start
+
+@media screen and (min-width 44em)
+	.pag-contacto
+		flex-direction row
+		justify-content space-around
+		.form
+			width 35%
+			.contact-form
+				justify-content space-around
+				.form-set--50
+					width 100%
+					.fill
+						flex-direction column
+						align-items flex-start
+
+		.maps
+			width 65%
+			box-sizing border-box
+			padding-left 2em
+
+@media screen and (min-width 57.25em)
+	.pag-contacto
+		justify-content space-around
+		.form
+			width 35%
+			.contact-form
+				justify-content space-around
+				.form-set--50
+					width 100%
+					.fill
+						flex-direction row
+						align-items flex-start
+			.mail
+				margin-top 2.6em
+		.maps
+			width 65%

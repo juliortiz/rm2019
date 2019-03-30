@@ -1,0 +1,122 @@
+.slider
+	.csslider1
+		display block
+		.cs_bullets
+			display none
+
+.banner
+	display flex
+	justify-content space-around
+	.cotizacion
+		box-sizing border-box
+		width 378px
+		display flex
+		text-align center
+		align-items center
+		flex-direction column
+		justify-content space-around
+		&__img
+			background-color white
+			border-radius 5px
+			box-sizing border-box
+			padding .3em
+			width 40%
+			margin 0 auto
+			cursor pointer
+			box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+			a
+				display block
+				text-align center
+				figure
+					font-size 0
+				h4
+					text-transform uppercase
+					font-size 1.5rem
+					color _gray
+					border-radius 5px
+					line-height 1em
+					margin-top .5em
+					padding 0
+					.minuscula
+						text-transform lowercase
+						color _gray
+						font-size 1rem
+
+		&__texto
+			margin-top 1em
+		&__telefonos
+			color _gray
+			h4
+				font-size 1.5em
+
+.services
+	padding 1em
+	.service__item
+		display flex
+		flex-direction column
+		position relative
+		background-color #FFF
+		margin-bottom 1em
+		border-radius 0.5em
+		overflow hidden
+		box-sizing border-box
+		border 1px solid _gray-nav
+		padding .5em
+		background-color _gray-bg
+		.service__img
+				margin-bottom .7em
+				border-radius 0.5em 0.5em 0 0
+				overflow hidden
+				img
+					transition all 0.8s ease-in-out
+		&:hover
+			box-shadow 0 4px 12px -7px #000;
+			transition all 0.8s ease-in-out
+			.service__img
+				img
+					transform scale(1.1) rotate(2deg)
+
+	.service__title
+		color _blue
+
+	.service__description
+		padding 1em
+	.service__link
+		margin-top auto
+		text-decoration none
+		background-color _blue
+		text-align center
+		color _white
+		font-weight 700
+		padding 0.5em .6em .4em
+		border-radius 5px
+		align-self flex-end
+
+@media screen and (min-width 37.5em)
+	.services
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		padding 0em 1em 1em 1em
+		.service__item
+			flex-basis 44%
+			margin 1em
+
+@media screen and (min-width 50em)
+	.services
+		.service__item
+			flex-basis 45%
+
+@media screen and (min-width 57.25em)
+	.services
+		.service__item
+			&--d-none
+				display none
+
+@media screen and (min-width 57.25em)
+	.services
+		.service__item
+			flex-basis 29%
+			&--d-none
+				display none
+	

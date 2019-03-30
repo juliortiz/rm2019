@@ -1,0 +1,144 @@
+.text-uppercase
+	text-transform uppercase
+.d-none
+	display none
+.d-nonec
+	display block
+.subtitle--dnone
+	display none
+
+.subtitle
+	text-transform uppercase
+	padding-top 2em
+	margin-bottom 1em
+	text-align: center
+	h2
+		border-bottom 2px solid _blue
+		display: table
+		margin: 0 auto
+		color _blue
+		font-style italic
+		font-size 1.4em
+		span
+			color _gray
+
+
+.subtitle-lvl2
+	text-transform uppercase
+	font-family 'Teko', serif
+	margin-bottom .7em
+	color _gray
+	font-size 1.3em
+	font-weight bold
+	text-align center
+.paragraph
+	font-family 'Open Sans', sans-serif
+	font-size .8em
+	line-height 1.5em
+	.sin-underline
+		text-decoration blink
+	&--sin-padding
+		padding 0
+	&__subtitle
+		color _gray
+		font-family 'Open Sans', sans-serif
+		font-size .8em
+		text-transform uppercase
+		font-weight bold
+		&--margin-bottom
+			margin-bottom .8em
+		&--gallery
+			text-align center
+
+.general-container
+	max-width 64em
+	margin-right auto
+	margin-left auto
+
+.imgleft
+	float left
+	width 9.5em
+	margin-right 5px
+.imgright
+	float right
+	width 49%
+	margin-right 5px
+.img-right
+	float right
+	margin 10px 10px 10px 10px
+
+.main
+	padding 3.5em .5em .5em .5em
+	box-shadow 0px 5.5px 8px 0px rgba(0,0,0,0.5)
+	background-color _white
+	margin-bottom 1em
+	width 100%
+	box-sizing border-box
+
+.imghead
+	font-size 0
+	border-radius .6rem .6rem 0 0
+	overflow hidden
+
+.list-check
+	&__row
+		display flex
+		flex-direction row
+	&__left
+		margin-right .5em
+		color _gray-border
+
+.link-menu
+	display flex
+	a
+		display block
+		background-color _blue
+		padding 0.5em 0.6em 0.4em
+		text-transform uppercase
+		color _white
+		font-weight 700
+		border-radius 5px
+		margin 4em 0 0em auto
+		box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+
+.link-option
+	display flex
+	a
+		display block
+		background-color _bluehover
+		padding 0.5em 0.6em 0.4em
+		text-transform uppercase
+		color _white
+		font-weight 700
+		border-radius 5px
+		margin 4em 0 0em auto
+		box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+
+@media screen and (min-width 44em)
+	.subtitle
+		padding-top 4em
+	.link-option
+		display none
+	.link-option--visible
+		display flex
+
+@media screen and (min-width 50em)
+	.subtitle--dnone
+		display block
+
+@media screen and (min-width 57.25em)
+
+	.d-none
+		display block
+
+	.d-nonec
+		display none
+
+	.imgleft
+		width 20%
+		margin-right 15px
+
+	.main
+		padding-top 5.6em
+	.cmargin-bottom
+		margin-bottom 10em

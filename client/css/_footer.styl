@@ -1,0 +1,49 @@
+.footer
+	padding 1em
+	width 100%
+	align-self flex-end
+	box-sizing border-box
+	margin auto auto 0
+	box-shadow 0px 5.5px 8px 0px rgba(0,0,0,0.5)
+	background-color _blue
+	&__group
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		border-bottom 1px solid _white
+	&__item
+		padding-bottom 0.5em
+		margin-bottom 0.5em
+		display flex
+	&__icon, &__title
+		color _white
+	&__icon
+		padding 0.3em 0.8em 0 0
+	&__texto p
+		color #FFF
+
+	&__texto--color-gray p
+		color _gray
+	&__title--gray
+		color _gray
+		text-transform uppercase
+	.by-jc
+		display table
+		margin 1em auto 0
+		color _gray-border
+		font-family 'Open Sans', sans-serif
+		font-size .7em
+
+@media screen and (min-width 43em)
+	.footer
+		&__group
+			flex-wrap nowrap
+		&__item
+			&:nth-child(n+2)
+				margin 0 1em
+
+@media screen and (min-width 57.25em)
+	.footer
+		.footer__group
+			max-width 64em
+			margin 0 auto

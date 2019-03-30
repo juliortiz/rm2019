@@ -1,0 +1,164 @@
+.detalle-vehiculo
+	max-width 37.5em
+	margin 0 auto
+	display flex
+	flex-wrap wrap
+	display flex
+	flex-wrap wrap
+	justify-content center
+	&__img
+		margin 0 auto 1em
+		figure
+			max-width 19em
+			margin 0 auto
+			box-sizing border-box
+			border 1px solid _gray-border
+			border-radius .5em
+			overflow hidden
+			img
+				display block
+	&__descripcion
+		margin 0 auto
+		&__group
+			margin-bottom 2em
+			&:nth-child(n+1)
+				margin-right 2em
+.galeria-fotos
+	.album
+		display flex
+		justify-content space-between
+		align-items center
+		flex-wrap wrap
+		&__item
+			max-width 100%
+		&__miniatura
+			a
+				border 1px solid _gray-border
+				display block
+				margin .3em 1em 1em 1em
+				box-sizing border-box
+				border-radius .3em
+				overflow hidden
+				position relative
+				// &:after
+				// 	content "\e987"
+				// 	font-family 'icomoon'
+				// 	font-size 2.5em
+				// 	color _gray-nav
+				// 	display flex
+				// 	justify-content center
+				// 	align-items center
+				// 	position absolute
+				// 	width 100%
+				// 	height 100%
+				// 	top 0
+				// 	left 0
+				// 	background-color rgba(0,0,0,0.5)
+				// 	opacity 0
+				img
+					display block
+					transition all 0.8s ease-in-out
+					position relative
+				&:hover
+					&:after
+						opacity 1
+					img
+						transform scale(1.1) rotate(2deg)
+						transition all 0.8s ease-in-out
+
+		&__zoom
+			display none
+			background-color rgba(0,0,0,0.9)
+			z-index 1000
+			position fixed
+			top 0
+			left 0
+			width 100%
+			height 100%
+			overflow scroll
+			.foto
+				display flex
+				align-items center
+				height 100%
+				justify-content center
+				&__container
+					margin auto 3em
+					max-width 600px
+				&__descripcion
+					margin-bottom 1em
+					.paragraph__subtitle
+						color _yellow
+						margin-bottom .5em
+						text-align center
+					p
+						color _white
+				&__img
+					figure
+						border 3px solid _white
+						box-sizing border-box
+						overflow hidden
+						margin auto
+						background-color _black
+						img
+							display block
+							animation-name mostrarce
+							animation-duration 1.5s
+
+				&__botones
+					display flex
+					justify-content space-around
+					align-items center
+					background-color _white
+					a
+						color _gray-border
+						font-family 'Open Sans', sans-serif
+						font-size 1.5em
+						line-height 1em
+						padding 0 2em
+						box-sizing border-box
+						&:hover
+							color _gray
+
+
+	@keyframes mostrarce
+		from
+			opacity 0
+		to
+			opacity 1
+
+@media screen and (min-width 25em)
+	.galeria-fotos
+		.album
+			&__item
+				max-width 50%
+			&__zoom
+				&:target
+					display block
+			&__miniatura
+				a:after
+					content "\e987"
+					font-family 'icomoon'
+					font-size 2.5em
+					color _gray-nav
+					display flex
+					justify-content center
+					align-items center
+					position absolute
+					width 100%
+					height 100%
+					top 0
+					left 0
+					background-color rgba(0,0,0,0.5)
+					opacity 0
+
+@media screen and (min-width 37.5em)
+	.galeria-fotos
+		.album
+			&__item
+				max-width 33.33%
+
+@media screen and (min-width 44em)
+	.galeria-fotos
+		.album
+			&__item
+				max-width 25%

@@ -433,7 +433,7 @@
   margin-top: -28px;
   margin-left: -28px;
 
-  background-color: #CBECFD;
+  background-color: #FF2022;
 
   border-radius: 50%;
 }
@@ -455,7 +455,7 @@
 .csslider1 > .cs_arrowprev > label span,
 .csslider1 > .cs_arrownext > label span {
   display: block;
-  color: #3A4A5A;
+  color: #FFF;
 }
 .csslider1 > .cs_arrowprev > label span:after,
 .csslider1 > .cs_arrownext > label span:after {
@@ -481,16 +481,16 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 
 .csslider1 > .cs_arrowprev:hover > label,
 .csslider1 > .cs_arrownext:hover > label {
-  background-color: #e5f6fe;
+  background-color: #fcbebe;
 }
 
 .csslider1 > .cs_arrownext:hover > label span {
-  color: #000;
+  color: #FFF;
   -webkit-animation: nextArrow1 .7s infinite ease-in-out;
   animation: nextArrow1 .7s infinite ease-in-out;
 }
 .csslider1 > .cs_arrowprev:hover > label span {
-  color: #000;
+  color: #FFF;
   -webkit-animation: prevArrow1 .7s infinite ease-in-out;
   animation: prevArrow1 .7s infinite ease-in-out;
 }
@@ -565,7 +565,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
   margin-top: -28px;
   margin-left: -28px;
 
-  background-color: #CBECFD;
+  background-color: #DD2527;
 
   border-radius: 50%;
 }
@@ -576,7 +576,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
 }
 .csslider1 > .cs_play_pause > label span {
   display: block;
-  color: #3A4A5A;
+  color: #FFF;
 }
 .csslider1 > .cs_play_pause > label span:after{
   display: block;
@@ -596,10 +596,10 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_play_pause > label span:after {
 }
 
 .csslider1 > .cs_play_pause:hover > label {
-  background-color: #e5f6fe;
+  background-color: rgb(255, 226, 226);
 }
 .csslider1 > .cs_play_pause:hover > label span {
-  color: #000;
+  color: #FFF;
   -wibkit-animation: playPause1 .7s infinite ease-in-out;
   animation: playPause1 .7s infinite ease-in-out;
 }
@@ -625,7 +625,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_play_pause > label span:after {
   border-radius: 50%;
   margin: 0 5px;
   padding: 9px;
-  background: #CBECFD;
+  background: #DD2527;
 }
 
 

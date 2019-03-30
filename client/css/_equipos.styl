@@ -1,0 +1,51 @@
+.container-marcas-equipos
+	display flex
+	justify-content space-around
+	align-items center
+	flex-wrap wrap
+	&__item
+		margin 1em .5em
+		padding 1em 1em
+		text-align center
+		border 1px solid _blue
+		background-color _gray-bg
+		border-radius .5em
+		overflow hidden
+		width 7.6em
+		&:hover
+			box-shadow  0 4px 12px -7px #000
+			transition all .5s ease-in-out
+
+	figure
+		display table
+		margin 0 auto
+		font-size 0
+
+	&__option
+		display flex
+		justify-content center
+		margin-top .8em
+		a
+			background-color _blue
+			border-radius 5px
+			width 50%
+			text-align center
+			color _white
+			font-weight bold
+			padding .3em .5em 0.2em
+			line-height 1em
+			font-size 1em
+			margin 0 .2em 0
+			&:hover
+				box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+
+.container-marcas-equipos--d-none
+	display none
+
+@media screen and (min-width 44em)
+
+	.container-marcas-equipos
+		&__item
+			margin 1em 0em
+		&--d-none
+			display flex

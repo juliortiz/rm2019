@@ -1,0 +1,180 @@
+.container-repuestos
+	display flex
+	justify-content space-around
+	align-items center
+	flex-wrap wrap
+	&__item
+		margin 1em .5em
+		padding .5em 
+		text-align center
+		background-color _gray-bg
+		border-radius .5em
+		overflow hidden
+		width 12em
+		box-shadow  0 4px 12px -7px #000
+			
+	figure
+		margin 0 auto
+		font-size 0
+		background-color _white
+		border-radius 8px 8px 0 0
+		img
+			padding .5rem
+			box-sizing border-box
+	.descripcion
+		padding .5em
+		margin-top .5em
+		margin-bottom .4em
+		border-radius 0 0 5px 5px
+		p
+			color _blue
+			text-transform uppercase
+			font-weight bold
+	.link
+		text-transform uppercase
+		background-color _bluehover
+		color _white
+		font-weight 600
+		padding .3em .6em .1em
+		border-radius 5px
+		font-size .9em
+		&:hover
+			box-shadow  0 4px 12px -7px #000
+			transition all 0.5s ease-in-out
+
+.repuesto
+	overflow hidden
+	max-width 100%
+	&__slider
+		background-color _white
+		border 1px solid _gray-nav
+		margin 0 0 2em
+		// max-width 50%
+		overflow hidden192
+	&__item
+		figure
+			padding 1em
+	&__data
+		margin 2em 0
+	&__subtitle
+		font-family 'Open Sans', sans-serif
+		font-size .8em
+		text-transform uppercase
+	&__table
+		width 100%
+		margin-top 1em
+		tr, td
+			border 1px solid _gray-border
+			padding .5em .7em
+			font-family 'Open Sans', sans-serif
+			font-size .9em
+		.dato
+			color _gray-border
+			max-width 30%
+	&__boton
+		text-transform uppercase
+		background-color _bluehover
+		padding .3em .6em .1em
+		border-radius 5px
+		font-size 1em
+		display table
+		margin 0 auto
+		cursor pointer
+		box-shadow  0px 1.5px 1px 0px rgba(0,0,0,0.5)
+		p
+			color _blue
+			font-weight bold
+		// &:hover
+		// 	box-shadow  0 4px 12px -7px #000
+		// 	transition all 0.5s ease-in-out
+	.form
+		display none
+		flex-direction column
+		justify-content space-around
+		margin 1em 0
+		&__repuesto
+			font-family Arial,Helvetica,sans-serif
+			font-size .8em
+			line-height 1.5em
+			display flex
+			flex-wrap wrap
+			.form-set
+				width 100%
+				padding 0
+				margin-bottom 1em
+				border 0
+				.fill
+					margin .5em 0
+					display flex
+					align-items center
+					justify-content space-between
+					.form-label
+						width 8.8em
+					.form-input
+						width 100%
+						line-height 1.5em
+						border 1px solid #BEBEBE
+						padding-left .2em
+			.form-txtarea
+				width 98%
+				height 5em
+				overflow auto
+				border 1px solid #BEBEBE
+				margin 0 auto
+			#msjboton
+				display flex
+				width 100%
+				.btn-b
+					// margin-left auto
+					margin 0 auto
+					background-color _orange
+					border-radius 5px
+					border 0
+					text-align center
+					color white
+					font-weight bold
+					text-transform uppercase
+					padding .6em
+					line-height 1em
+					font-size 1em
+					box-shadow 0px 1.5px 1px 0px rgba(0,0,0,0.5)
+					&:hover
+						color _orange
+						background-color _gray
+						font-style italic
+			#c_information
+				margin-top 1em
+					p
+						text-align: center;
+						font-weight bold
+						font-size 1.2em
+						color: #1B9DED;
+						border-radius 5px
+						width 100%
+			.c_error
+				color _orange
+				font-weight bold
+		#c_information
+				margin 1em auto 0
+				p
+					text-align: center;
+					font-weight bold
+					font-size 1.2em
+					color: #1B9DED;
+					border-radius 5px
+					width 100%
+		&-visible
+			display flex
+
+@media screen and (min-width 37.5em)
+	.repuesto
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		box-sizing border-box
+		&__group1, &__group2
+			width 45%
+			overflow hidden
+			margin 0 .5em
+		&__data
+			margin-top 0
